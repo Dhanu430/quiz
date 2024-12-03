@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #submit{
+            width: 300px;
+        }
+        #scores{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JAVASCRIPT QUIZ</h1>
+    <input type="text" name="input" id="input" placeholder="Enter your name" required><br><br>
+    <button id="random">Random name</button><br><br>
+    <button id="submit">Start QUIZ</button><br><br>
+    <button id="scores">View high Scores</button>
+    <script>
+       const input=document.getElementById("input").value
+       const btn=document.getElementById("random").addEventListener("click",()=>{
+        const random=["dhanu","cherry","bharath"]
+        
+        console.log(random)
+        if(random.values){
+            alert("success")
+
+        }
+        else{
+            alert("not sucess")
+        }
+
+       })
+       const submit=document.getElementById("submit").addEventListener("click",()=>{
+        window.location.href="./Quiz.html"
+       })
+
+    </script>
+</body>
+</html>
